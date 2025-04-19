@@ -12,9 +12,9 @@ mu_0 = 3
 
 # Perform t-test 
 t_stat, p_val = ttest_1samp(data, mu_0)
-print(f'T-statistic: {t_stat}, P-value: {p_val}')
+print(f"T-statistic: {t_stat}, P-value: {p_val}")
 
 if p_val < 0.05:
-    print('Reject the null hypothesis')
+    print("Reject the null hypothesis")
 else:
-    print('Fail to reject the null hypothesis')
+    print("Fail to reject the null hypothesis")
